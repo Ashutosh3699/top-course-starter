@@ -31,7 +31,7 @@ const Cards = ({getAllCourse, findCourse}) => {
 
       for (const key in getAllCourse) {
 
-        if (key == findCourse) {
+        if (key === findCourse) {
           
           getAllCourse[key].forEach((val)=>{
 
