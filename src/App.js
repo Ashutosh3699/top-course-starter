@@ -10,7 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
 
-  let [allCourse,setCourse] = useState([]);
+  let [allCourse,setCourse] = useState(null);
   let [loading , setLoading] = useState(true);
 
   useEffect(()=>{

@@ -9,6 +9,19 @@ const Cards = ({getAllCourse, findCourse}) => {
   
   let [liked,setLiked] = useState([]);
 
+  // console.log(getAllCourse)
+
+  if(getAllCourse === null){
+
+    return(
+
+      <div className='w-[100%] relative top-[30%] flex flex-col justify-center items-center gap-4'>
+
+        <h3 className=' font-bold text-1xl text-white'>No Data Available...</h3>
+    </div>
+    );
+  }
+
   const getCourse = () =>{
 
     // console.log(getAllCourse);
